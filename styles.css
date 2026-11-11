@@ -340,3 +340,31 @@ textarea.form-control { min-height: 130px; resize: vertical; }
   .whatsapp-float { right: 16px; bottom: 16px; padding: 13px; }
   .whatsapp-float span { display: none; }
 }
+/* Acceso flotante a la tienda en línea */
+.store-float {
+  position: fixed;
+  right: 24px;
+  bottom: 88px;
+  z-index: 1050;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 18px;
+  color: #fff;
+  background: var(--blue);
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(12, 61, 117, .28);
+  font-weight: 700;
+  transition: background .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+.store-float i { font-size: 1.3rem; }
+.store-float:hover, .store-float:focus-visible {
+  color: #fff;
+  background: #075fca;
+  box-shadow: 0 10px 28px rgba(12, 61, 117, .36);
+  transform: translateY(-3px);
+}
+@media (max-width: 575.98px) {
+  .store-float { right: 16px; bottom: 76px; padding: 13px; }
+  .store-float span { display: none; }
+}
