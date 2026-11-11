@@ -311,3 +311,32 @@ textarea.form-control { min-height: 130px; resize: vertical; }
   .social-links { justify-content: flex-start; }
   .footer-bottom { flex-direction: column; }
 }
+
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1050;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 18px;
+  color: #fff;
+  background: #25d366;
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(10, 80, 42, .3);
+  font-weight: 700;
+  transition: background .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+.whatsapp-float i { font-size: 1.45rem; }
+.whatsapp-float:hover, .whatsapp-float:focus-visible {
+  color: #fff;
+  background: #1fb85a;
+  box-shadow: 0 10px 28px rgba(10, 80, 42, .38);
+  transform: translateY(-3px);
+}
+@media (max-width: 575.98px) {
+  .whatsapp-float { right: 16px; bottom: 16px; padding: 13px; }
+  .whatsapp-float span { display: none; }
+}
